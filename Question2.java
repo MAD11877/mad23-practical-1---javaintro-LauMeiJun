@@ -9,8 +9,10 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
+    System.out.println("Please enter your height");
     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
+    System.out.println("Height: " + height);
+    in.close();
   }
 }
