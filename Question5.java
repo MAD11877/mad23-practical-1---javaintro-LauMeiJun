@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import java.util.*;
+
 public class Question5
 {
   public static void main(String[] args)
@@ -27,37 +29,39 @@ public class Question5
      */
     
     
-    List<Integer> Numbers = new ArrayList<>();
+    
+    List<Integer> Numbers = new ArrayList<Integer>();  
     System.out.println("Please enter a number");
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
-    while(num != 0){
+    while(num > 0){
       System.out.println("Number:");
       Scanner no = new Scanner(System.in);
-      int Numb = in.nextInt();
+      int Numb = no.nextInt();
       Numbers.add(Numb);
-      num--;
+      
+        num--;
+      
     }
-    for (int i = 0; i < num; i++) {
-      System.out.println(Numbers.get(i));
-    }
-   int maxCount = 0;
-    for (int i = 0; i < num; i++) {
+
+    //System.out.print(Numbers);
+    
+    int maxCount = 0;
+    int mode = 0;
+    for (int i = 0; i < Numbers.size(); i++) {
       int value = Numbers.get(i);
-        int count = 1;
-        for (int j = 0; j < num; j++) {
-            if (Numbers.get(j) == value)
+      int count = 1;
+      for (int j = 0; j < Numbers.size(); j++) {
+        if (Numbers.get(j) == value){
                 count++;
             if (count > maxCount) {
-                int mode = value;
+                mode = value;
                 maxCount = count;
-              System.out.println(mode);
-              break;
             }
         }
     }
+  } 
     
-    in.close();
-    
+          System.out.println(mode);
   }
 }
