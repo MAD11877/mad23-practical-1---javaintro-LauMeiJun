@@ -32,6 +32,4 @@ public class Question4
     in.close();
   }
 }
-  }
-}
 }
