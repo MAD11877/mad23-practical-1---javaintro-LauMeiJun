@@ -36,8 +36,8 @@ public class Question5
     int num = in.nextInt();
     while(num > 0){
       //System.out.println("Number:");
-      Scanner no = new Scanner(System.in);
-      int Numb = no.nextInt();
+      Scanner in = new Scanner(System.in);
+      int Numb = in.nextInt();
       Numbers.add(Numb);
       
         num--;
