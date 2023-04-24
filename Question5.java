@@ -44,7 +44,7 @@ public class Question5
       
     }
     
-    in.close()
+    in.close();
 
     //System.out.print(Numbers);
     
