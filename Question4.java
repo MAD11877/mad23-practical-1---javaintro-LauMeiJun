@@ -17,7 +17,7 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-    System.out.println("Please enter a number");
+    //System.out.println("Please enter a number");
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
     while(num != 0){
