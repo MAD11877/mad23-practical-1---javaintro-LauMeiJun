@@ -43,7 +43,6 @@ public class Question5
         num--;
       
     }
-    in.close();
 
     //System.out.print(Numbers);
     
