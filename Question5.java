@@ -31,11 +31,11 @@ public class Question5
     
     
     List<Integer> Numbers = new ArrayList<Integer>();  
-    System.out.println("Please enter a number");
+    //System.out.println("Please enter a number");
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
     while(num > 0){
-      System.out.println("Number:");
+      //System.out.println("Number:");
       Scanner no = new Scanner(System.in);
       int Numb = no.nextInt();
       Numbers.add(Numb);
