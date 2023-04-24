@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.List;
 import java.util.ArrayList;
 
 public class Question5
@@ -43,6 +43,8 @@ public class Question5
         num--;
       
     }
+    
+    in.close()
 
     //System.out.print(Numbers);
     
